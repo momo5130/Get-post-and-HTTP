@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Http1.1 and Http2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>HTTP1.1 </h1>
+    <ul>
+        <li>
+            Introduced in 1997.
+        </li>
+        <li>Internet ecosystem was changing at a rapid pase.</li>
+        <li>During that duration more search engines and websites were being created with heavy pages having more images and data, and also the resource usage increased.</li>
+        <li>
+            In order to cope-up with that, more features were required.
+        </li>
+        <li>Addition to the fatures of HTTP1, HTTP1.1 came up with features like CORS, Keep-alive to make internet fast.</li>
+    </ul>
+    
+    
+    
+    
+    
+
+    <h3>Flaws in HTTP1.1 </h3>
+    <ul>
+        <li>
+            Header information is repeated in every request, which cannot be compressed, even though the data can be compressed.
+        </li>
+        <li>More focused on gzip, minifying CSS/JS, caching etc.</li>
+        <li>
+            TCP connection gets blocked till the response is received. 
+        </li>
+        <li>
+            HTTP1.1 has 6 TCP connection which were still not enough for the clients.
+        </li>
+        <li>
+            Keep-alive  option enables re-using of the same TCP connection for multiple HTTP request.
+        </li>
+    </ul>
+    <br>
+    <h1>HTTP2.0 </h1>
+    <ul>
+        <li>
+            HTTP2.0 came in 2015
+    
+        </li>
+        <li>
+            HTTP2.0 is build on top of HTTP1.1, which includes all the features of HTTP1.1. 
+        </li>
+    </ul>
+    <h3>Features of HTTP2.0</h3>
+    <ul>
+        <li>
+            In HTTP2.0 single secured TCP connection is being used, in which streams are created in which every HTTP request is sent as a stream or stream frame. 
+            So single TCP connection pipeline is used and in that it is compulsory to have TLS setup, which makes it faster. We don't have to create mutiple TCP connections.
+        </li>
+        <li>
+            In HTTP2, HPACK was added, which separates the Header data from the request and can be zipped.
+    
+        </li>
+        <li>
+            HPACK enables automatic caching of Header data which reduces HTTP request size
+
+        </li>
+        <li>
+            PUSH frames were also included in HTTP2.0 which enables the client to send mandatory resources in advance along with an HTTP response.
+
+        </li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Get and Post Difference</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        table, th, td {
+    border: 1px solid grey;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <h1>Difference between GET and POST</h1>
+        <tr>
+            <td>
+                <h2>GET</h2>
+            </td>
+            <td>
+                <h2>POST</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GET requests can be cached
+            </td>
+            <td>
+                POST requests are never cached
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GET requests remain in the browser history
+            </td>
+            <td>
+                POST requests do not remain in the browser history
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GET requests can be bookmarked
+            </td>
+            <td>
+                POST requests cannot be bookmarked
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GET requests should never be used when dealing with sensitive data
+            </td>
+            <td>
+                PUT is used to send data to a server to create/update a resource.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                GET requests have length restrictions
+            </td>
+            <td>
+                POST requests have no restrictions on data length
+            </td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
